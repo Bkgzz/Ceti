@@ -1,0 +1,33 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.contact-card {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.contact-icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--primary-color);
+  margin: 0 auto 1rem;
+}
+
+.contact-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-text {
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
